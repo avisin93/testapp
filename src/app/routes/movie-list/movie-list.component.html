@@ -1,0 +1,13 @@
+<div class="container">
+    <div class="cards">
+        <div class="card" *ngFor='let item of movieAppObject;let index = index;'>
+            <!-- <img src="/pix/samples/23m.jpg" alt="Sample photo"> -->
+            <div class="text">
+              
+                <h3>{{item?.moviename}}</h3>
+                <p>{{item?.description}}</p>
+                <button class='ptr' (click)='bookTickets(item)'>Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+<div class="container">
+    <div class="cards">
+        <div class="card" *ngFor='let item of timeList;let index = index;'>
+
+            <div class="text">
+                <h3>{{item?.name}}</h3>
+                <!-- <p>{{item?.description}}</p> -->
+                <button class='ptr' (click)='selectTime(item)'>Book Now</button>
+            </div>
+        </div>
+    </div>
+</div>
